@@ -59,7 +59,18 @@ body {
     .clearfix {
     clear: both;
     }
-    
+    #bonus{
+        
+        height: auto;
+        text-align: center;
+    }
+
+    #rocket {
+        width: auto;
+        height: 100px;
+        
+    }
+
     .error {
     color: #f00;
     font-size: .8em;
