@@ -53,7 +53,9 @@ def index():
 
         if(valid_re.match(request.form['email'])):
             emailok = True # valid
-            email_error = ''       
+            email_error = ''  
+        elif request.form['email'] == '':
+            emailok = True     
         else:
             emailok = False
             email_error = 'Invalid'
