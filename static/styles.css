@@ -1,0 +1,149 @@
+
+body { 
+    color: #000;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(61, 189, 189)
+    }
+    
+    #bodyDiv {
+    width: 500px;
+    height: auto;
+    border: 5px green solid;
+    margin: 5% auto;
+    border-radius: 10px;
+    background-color: lightgrey;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+    
+    /* Prevent background color leak outs */
+    -webkit-background-clip: padding-box; 
+    -moz-background-clip:    padding; 
+    background-clip:         padding-box;
+    
+    }
+    #headlineDiv{
+    width: 100%;
+    height: auto;
+    
+    float: right;
+    }
+    #prompts {
+    margin:5% auto;
+    padding: 10px;
+    width: 80%;
+    
+    
+    }
+    #contentDiv {
+    width: 40%;
+    height: 30%;
+    margin: 25% auto;
+    border: 1px black solid;
+    
+
+    
+    }
+    #smalltext{
+    color: rgb(41, 40, 40);
+    font-size: .5em;
+    }
+    #submitButton{
+    text-align: center;
+    margin: 25px auto auto auto;
+    padding-bottom:5%;
+    
+    }
+    
+    .clearfix {
+    clear: both;
+    }
+    
+    .error {
+    color: #f00;
+    font-size: .8em;
+    font-style: italic;
+    
+    }
+    .headline {
+    
+    font-size: 3em;
+    font-variant: small-caps;
+    font-family:cursive;
+    padding-left: 15%;
+    padding-top: 5%;
+    margin:auto;
+    text-align: center;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
+    }
+    .signupPrompt{
+    font-size: 1em;
+    
+    padding-left: 25px;
+    padding-right: 2px;
+    padding-top: 3px;
+    
+    
+    }
+    .required {
+    color: black;
+    font-size: .5em;
+    text-shadow: #000000;
+    
+    }
+    .tbalign{
+    
+    
+    float: right;
+    margin:5px 50px 5px 0;
+    
+    }
+    .buttonTxt{
+    border-radius: 20px;
+    padding: 5px;
+    text-align:center;
+    border: #000 1px solid;
+    }
+    .myButton {
+    -moz-box-shadow: 4px 3px 0px 0px #3e7327;
+    -webkit-box-shadow: 4px 3px 0px 0px #3e7327;
+    box-shadow: 4px 3px 0px 0px #3e7327;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77b55a), color-stop(1, #72b352));
+    background:-moz-linear-gradient(top, #77b55a 5%, #72b352 100%);
+    background:-webkit-linear-gradient(top, #77b55a 5%, #72b352 100%);
+    background:-o-linear-gradient(top, #77b55a 5%, #72b352 100%);
+    background:-ms-linear-gradient(top, #77b55a 5%, #72b352 100%);
+    background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77b55a', endColorstr='#72b352',GradientType=0);
+    background-color:#77b55a;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius:15px;
+    border:1px solid #4b8f29;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:22px;
+    font-weight:bold;
+    padding:10px 25px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #5b8a3c;
+    }
+    .myButton:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #72b352), color-stop(1, #77b55a));
+    background:-moz-linear-gradient(top, #72b352 5%, #77b55a 100%);
+    background:-webkit-linear-gradient(top, #72b352 5%, #77b55a 100%);
+    background:-o-linear-gradient(top, #72b352 5%, #77b55a 100%);
+    background:-ms-linear-gradient(top, #72b352 5%, #77b55a 100%);
+    background:linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#72b352', endColorstr='#77b55a',GradientType=0);
+    background-color:#f6fa07;
+    border:#000000 1px solid;
+    color:#000000;
+    }
+    .myButton:active {
+    position:relative;
+    top:1px;
+    }

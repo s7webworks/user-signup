@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block welcome %}
+<link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='welcome.css')}}"> 
+
+{% endblock welcome %}
+{% block content %}
+<div id="bodyDiv"> 
+        <div class="headlineDiv">
+<span class="headline" >Welcome, {{ username }}</span>
+</div>
+{% endblock %}

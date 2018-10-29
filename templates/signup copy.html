@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <!-- <link rel="stylesheet" type="text/css" href="/styles.css" > -->
+    <style>
+    body { 
+    color: #000;
+    width: 100%;
+    height: 100%;
+    background-color: darkcyan
+}
+
+#bodyDiv {
+    width: 400px;
+    height: 200px;
+    border: 5px green solid;
+    margin: 5% auto;
+    border-radius: 10px;
+    background-color: lightgrey;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+    
+  /* Prevent background color leak outs */
+  -webkit-background-clip: padding-box; 
+  -moz-background-clip:    padding; 
+  background-clip:         padding-box;
+
+}
+
+#contentDiv {
+    width: 40%;
+    height: 30%;
+    margin: 25% auto;
+    border: 1px black solid;
+    
+    border: 30px purple solid;
+
+}
+
+.clearfix {
+    clear: both;
+}
+
+.error {
+    color: #f00;
+    font-size: 0.5em;
+    font-style: italic;
+
+}
+.headline {
+    font-size: 2em;
+    font-variant: small-caps;
+    padding-left: 10%;
+    padding-top: 5%;
+    margin:15px 0 0 15px;
+
+}
+.signupPrompt{
+    font-size: 1em;
+    font-variant: small-caps;
+    padding-left: 25px;
+    padding-right:25px;
+
+}
+    </style>      
+    </head>
+    <body>
+        <div id="bodyDiv"> 
+    <span class="headline">Signup</span>
+        <form method="post">
+            <table>
+                <tr>
+                    <td><label for="username"><span class="signupPrompt">User--name</span></label></td>
+                    <td>
+                        <input name="username" type="text" value="">
+                        <span class="error"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="password"><span class="signupPrompt">Password</span></label></td>
+                    <td>
+                        <input name="password" type="password">
+                        <span class="error"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="verify">Verify Password</label></td>
+                    <td>
+                        <input name="verify" type="password">
+                        <span class="error"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email (optional)</label></td>
+                    <td>
+                        <input name="email" value="">
+                        <span class="error"></span>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit">
+        </form>
+    </div> <!-- Content div-->
+</div> <!-- Body div-->
+</body> 
+</html>

@@ -1,0 +1,44 @@
+
+{% extends "base.html" %}
+{% block headContent %}
+<link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='styles.css')}}"> 
+
+{% endblock headContent %}   
+
+{% block content %}
+    <div id="bodyDiv"> 
+        <div class="headlineDiv">
+<span class="headline">new user signup</span>
+</div> <!-- / Headline div-->
+<div class="clearfix"></div>
+    <form method="POST">
+        <div id ="prompts">
+                <label for="username"><span class="signupPrompt">Username</span><span class="smalltext">*</span></label>
+                    <input name="username" type="text" value="{{username}}" class="tbalign">
+                    <span class="error">{{username_error}}</span>
+                    
+            <br class="clearfix">
+                <label for="password"><span class="signupPrompt">Password</span><span class="smalltext">*</span></label>
+                    <input name="password" type="password" class="tbalign">
+                    <span class="error">{{password_error}}</span>
+            <br class="clearfix">
+                
+            <label for="verify"><span class="signupPrompt">Verify Password</span><span class="smalltext">*</span></label>             
+                    <input name="verify" type="password" class="tbalign">
+                    <span class="error">{{password_error}}</span>
+            <br class="clearfix">
+                <label for="email"><span class="signupPrompt">Email</span><span id="smalltext">(Optional)</span></label>
+                
+                    <input name="email" value="" class="tbalign" >
+                    <span class="error"></span>
+            <br class="clearfix">
+</div> <!-- prompts div-->
+<div id="submitButton">
+<input type="submit" value="Signup"  class="myButton">
+
+</div> <!-- / submitbutton div -->
+
+    </form>
+</div> <!-- Content div-->
+</div> <!-- Body div-->
+{% endblock content %}

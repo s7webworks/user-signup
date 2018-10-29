@@ -1,0 +1,38 @@
+body { 
+    color: #0f0;
+}
+
+#bodyDiv {
+    width: 100%;
+    height: 100%;
+
+}
+
+#contentDiv {
+    width: 40%;
+    height: 30%;
+    margin: 25% auto;
+    border: 1px black solid;
+    
+}
+
+.clearfix {
+    clear: both;
+}
+
+.error {
+    color: #f00;
+    font-size: 0.5em;
+    font-style: italic;
+
+}
+.headline {
+    font-size: 2em;
+    font-variant: small-caps;
+
+}
+.signupPrompt{
+    font-size: 1em;
+    font-variant: small-caps;
+
+}
