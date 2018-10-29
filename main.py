@@ -55,7 +55,8 @@ def index():
             emailok = True # valid
             email_error = ''  
         elif request.form['email'] == '':
-            emailok = True     
+            emailok = True
+            email_error = ''     
         else:
             emailok = False
             email_error = 'Invalid'
