@@ -25,12 +25,15 @@
                 
             <label for="verify"><span class="signupPrompt">Verify Password</span><span class="smalltext">*</span></label>             
                     <input name="verify" type="password" class="tbalign">
+                    
                     <span class="error">{{password_error}}</span>
+                    
+
             <br class="clearfix">
                 <label for="email"><span class="signupPrompt">Email</span><span id="smalltext">(Optional)</span></label>
                 
-                    <input name="email" value="" class="tbalign" >
-                    <span class="error"></span>
+                    <input name="email" value="{{email}}" class="tbalign" >
+                    <span class="error">{{email_error}}</span>
             <br class="clearfix">
 </div> <!-- prompts div-->
 <div id="submitButton">

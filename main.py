@@ -17,6 +17,7 @@ def index():
         verify = request.form['verify']
         username_error = ''
         password_error = ''
+        email = request.form['email']
 
         if request.form['username'] == '':
             username_error = "Required"
@@ -32,9 +33,9 @@ def index():
 
         if request.form['verify'] != request.form['password']:
             password_error = "Invalid"
-            passok = False
+            verifyok = False
         else:
-            passok = True
+            verifyok = True
 
         if len(request.form['username']) <= 3:
             username_error = "Too Short"
@@ -48,6 +49,14 @@ def index():
         else:
             passok = True
 
+        valid_re = re.compile(r'^.+@.+')
+
+        if(valid_re.match(request.form['email'])):
+            emailok = True # valid
+            email_error = ''       
+        else:
+            emailok = False
+            email_error = 'Invalid'
 
         if len(request.form['verify']) <= 4:
             password_error = 'Too Short'
@@ -55,13 +64,13 @@ def index():
         else: 
             passok = True
         
-        if passok and userok:
+        if passok and userok and verifyok and emailok:
             return render_template("welcome.html", username=username)
         
         else:
 
 
-            return render_template("index.html", username=username, password_error=password_error, username_error=username_error)
+            return render_template("index.html", username=username, password_error=password_error, username_error=username_error, email=email, email_error=email_error)
     else:
         return render_template("index.html")
 
